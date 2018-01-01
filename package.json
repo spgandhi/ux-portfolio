@@ -19,6 +19,9 @@
     "react-ga": "^2.5.6",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
+    "react-pdf": "^4.0.5",
+    "react-reading-progress": "^0.3.0",
+    "react-tabs": "^3.0.0",
     "react-typed": "^1.1.0",
     "reactstrap": "^6.5.0"
   },

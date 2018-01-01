@@ -17,6 +17,7 @@ import solderingImg from '../images/tic-tac-toe/soldering.jpg';
 import demo1Img from '../images/tic-tac-toe/demo-1.jpg';
 import demo2Img from '../images/tic-tac-toe/demo-2.jpg';
 import analytics from '../helper';
+import '../components//layout.css';
 
 const style = {
   projectTitle: {
@@ -42,7 +43,7 @@ class TicTacToe extends React.Component {
   render(){
     return (
       <LayoutFull>
-    <SEO title="Page two" />
+    <SEO title="Tic Tac Toe" />
     <div className="position-relative" style={{ height: 300 }}>
       <img src={ticTacToeMainImg} height="300px" width="100%" />
       <div style={style.projectTitle}>

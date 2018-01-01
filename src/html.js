@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import ReadingProgress from 'react-reading-progress'
 
 export default class HTML extends React.Component {
   render() {
@@ -14,7 +15,8 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
         </head>
-        <body {...this.props.bodyAttributes} style={{fontFamily: 'sans-serif'}}>
+        <body {...this.props.bodyAttributes} style={{fontFamily: 'Montserrat, serif'}}>
+          {/* <ReadingProgress /> */}
           {this.props.preBodyComponents}
           <div
             key={`body`}

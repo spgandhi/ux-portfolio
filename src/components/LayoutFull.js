@@ -5,10 +5,13 @@ import Header from './header'
 import './layout.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../global.css';
+import Footer from './footer';
+
 const LayoutFull = ({ children }) => (
   <div>
     <Header siteTitle={"Trip Buddy"} />
     <div
+      id="main-content"
       style={{
         margin: '0 auto',
         maxWidth: '100%',
@@ -18,6 +21,7 @@ const LayoutFull = ({ children }) => (
     >
       {children}
     </div>
+    <Footer />
   </div>
 )
 

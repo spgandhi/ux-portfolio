@@ -18,7 +18,32 @@ import pp2 from '../images/trip-buddy/pp2.png';
 import pp3 from '../images/trip-buddy/pp3.png';
 import pp4 from '../images/trip-buddy/pp4.png';
 import pp5 from '../images/trip-buddy/pp5.png';
+import persona1 from '../images/trip-buddy/persona-1.png';
+import fatigueImg from '../images/trip-buddy/fatigue.jpg';
+import genderImg from '../images/trip-buddy/gender.jpg';
+import preplanImg from '../images/trip-buddy/preplan.jpg';
+import fatigueRemedyImg from '../images/trip-buddy/fatigue_remedy.png';
+import travelWithImg from '../images/trip-buddy/travel_with.png';
 import analytics from '../helper';
+import CustomCarousal from '../components/CustomCarousal';
+import '../components//layout.css';
+import BlockCarousal from '../components/BlockCarousal';
+import mainSS from '../images/trip-buddy/main-ss.png';
+
+const slider = [
+  {
+    src: sketch1,
+  },
+  {
+    src: sketch2,
+  },
+  {
+    src: sketch3,
+  },
+  {
+    src: sketch4
+  }
+]
 
 const style = {
   projectTitle: {
@@ -41,13 +66,13 @@ class TripBuddy extends React.Component {
   componentDidMount() {
     analytics.pageView('trip-buddy');
   }
-  
+
   render() {
     return (
       <LayoutFull>
-        <SEO title="Page two" />
-        <div className="position-relative" style={{ height: 300 }}>
-          <img src={roadTripImg} height="300px" width="100%" />
+        <SEO title="Trip Buddy" />
+        <div className="position-relative" style={{ height: 300, textAlign: 'center', backgroundColor: 'rgb(61,167,249)' }}>
+          <img src={mainSS} height="300px"  />
           <div style={style.projectTitle}>
             <h1>Trip Buddy</h1>
             <p className="project-description">A long distance road trip planner and friend to play with on the trip.</p>
@@ -64,11 +89,17 @@ class TripBuddy extends React.Component {
           </ProjectSection>
           <ProjectSection title="Summmary">
             <h4>Summary</h4>
+            <p>
+              "Trip Buddy" is a interactive in car application that allows drivers to plan their road trips while on the go and participate in engaging activities that will help them combat fatigue. The system allows users to onboard and set their preferences as well as create a trip on their phones at home and when they are ready to start the trip they can sync their phone to their car Android Auto or Apple CarPlay systems.
+            </p>
             <div className="pv16">
               <h5 className="font-weight-light">Problem</h5>
-              <p>Most people do NOT preplan their long distance trips. But they end up having bad experiences at the places they take a break or night halt. Sometimes the place was not clean, the food was not good enough or they didn't find the food of their choice.</p>
+              <p>Most people do NOT preplan their long distance trips. But they end up having bad experiences at the places they take a break or night halt.
+                Some of the common problems people encounter could be the place is not clean or the food is not good enough or of their preference.
+                </p>
+
               <p>Also, people plan their trip differently based on who they are travelling with - like pets, kids, people with specific dietary needs, etc. And they might find it difficult to cater to these custom needs on a long distance trips.</p>
-              <p>People also tend to feel fatigued either driving or sitting in the car for a long period of time. And if there was a way to keep people engaged in fun activites while they are driving, it reduce their level of fatiguness.</p>
+              <p>People also tend to feel fatigued either driving or sitting in the car for a long period of time. And if there was a way to keep people engaged in fun activites while they are driving, it could reduce their level of fatiguness.</p>
             </div>
 
             <div className="pv16">
@@ -92,6 +123,9 @@ class TripBuddy extends React.Component {
                   <p className="font-italic">Play fun games like trivia to stay engaged on your ride</p>
                 </div>
               </div>
+              <div className="text-center">
+                <iframe width="438" height="930" src="//invis.io/ZAPCVASK487" frameborder="0" allowfullscreen></iframe>
+              </div>
             </div>
 
           </ProjectSection>
@@ -111,7 +145,7 @@ class TripBuddy extends React.Component {
 
             <div className="pv16">
               <h5 className="font-weight-light">Secondary Research</h5>
-              <p>We figured that for the above design question, there would be a lot of existing literature and research been done by other people and it might be helpful to look at it. We read a few research articles to understand when do people feel fatigue while driving, what do they do to recover and how effective they are.</p>
+              <p>We figured that for the above design question, there would be a lot of existing literature and research done by other people and it might be helpful to look at it. We read a few research articles to understand when do people feel fatigue while driving, what do they do to recover and how effective they are.</p>
             </div>
             <div className="row pv16">
               <div className="col-xs-12 col-md-6">
@@ -131,6 +165,26 @@ class TripBuddy extends React.Component {
             </div>
 
             <div className="pv16">
+              <div className="row">
+                <div className="col-xs-12 col-md-6">
+                  <img src={genderImg} />
+                </div>
+                <div className="col-xs-12 col-md-6">
+                  <img src={preplanImg} />
+                </div>
+                <div className="col-xs-12 col-md-6">
+                  <img src={fatigueImg} />
+                </div>
+                <div className="col-xs-12 col-md-6">
+                  <img src={travelWithImg} />
+                </div>
+                <div className="col-xs-12 col-md-6">
+                  <img src={fatigueRemedyImg} />
+                </div>
+              </div>
+            </div>
+
+            <div className="pv16">
               <h5 className="font-weight-light">Pivot</h5>
               <p>Based on our initial round of research we figured a couple of things:</p>
               <ul className="font-weight-light">
@@ -141,13 +195,13 @@ class TripBuddy extends React.Component {
               <ol className="font-weight-light">
                 <li>To focus only on long distance trips</li>
                 <li>To employ preventive solutions rather than reactive solutions</li>
-                <li>to help people plan their long distance trips with regular breaks and night halt and also keep them engaged with activites like trivia while also making sure that these activities don't distract them from driving.</li>
+                <li>To help people plan their long distance trips with regular breaks and night halt and also keep them engaged with activites like trivia while also making sure that these activities don't distract them from driving.</li>
               </ol>
             </div>
 
             <div className="pv16">
               <h5 className="font-weight-light">Personas</h5>
-              <p>"Trip Buddy" is a interactive in car application that allows drivers to plan their road trips while on the go and participate in engaging activities that will help them combat fatigue. The system allows users to onboard and set their preferences as well as create a trip on their phones at home and when they are ready to start the trip they can sync their phone to their car Android Auto or Apple CarPlay systems.</p>
+              <img src={persona1} />
             </div>
           </ProjectSection>
           <ProjectSection type="bg">
@@ -170,7 +224,7 @@ class TripBuddy extends React.Component {
               <h5 className="font-weight-light">Sketching</h5>
               <p>Based on our brain storming session, each of team member sketched 6 ideas. Some of the sketches were variation of the same solution/feature.</p>
               <div className="row">
-                <div className="col-xs-12 col-md-6">
+                {/* <div className="col-xs-12 col-md-6">
                   <img src={sketch1} />
                 </div>
                 <div className="col-xs-12 col-md-6">
@@ -181,7 +235,8 @@ class TripBuddy extends React.Component {
                 </div>
                 <div className="col-xs-12 col-md-6">
                   <img src={sketch4} />
-                </div>
+                </div> */}
+                <CustomCarousal items={slider} />
               </div>
             </div>
 
@@ -255,7 +310,7 @@ class TripBuddy extends React.Component {
               <p>This project proved to be very valuable in learning the entire User Centered Design process. Most of our team members were using this process for the first time and there were some major lessons we all learned:</p>
               <ul className="font-weight-light">
                 <li><b>Spend less time on secondary research and go talk to users.</b> We initally spent a lot of time reading research papers. We later figured that rolling out the survey and doing the interviews gave us much more valuable information to make decisions.</li>
-                <li><b>Know how much information to give to your test users.</b> On many occasions we found ourselves giving more than required information to the test users. We figured that giving them more information makes them bias during the test.</li>
+                <li><b>Know how much information to give to your test users.</b> On many occasions we found ourselves giving more than required information to the test users. We figured that giving them more information can introduce bias.</li>
               </ul>
             </div>
             <div className="pv16">

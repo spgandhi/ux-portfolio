@@ -11,3 +11,15 @@
   margin-top: 32px;
   margin-bottom: 32px;
 }
+
+.pull-left {
+  float: left;
+}
+
+.pull-right{
+  float: right;
+}
+
+.mr12 {
+  margin-right: 12px;
+}
