@@ -5,7 +5,6 @@ import SEO from '../components/seo'
 import ProjectSection from '../components/ProjectSection';
 import videoProtoMain from '../images/video-proto/video-proto-main.jpg';
 import analytics from '../helper';
-import CustomAlertBox from '../components/AlertBox';
 import '../components//layout.css';
 
 const style = {
@@ -54,7 +53,6 @@ class VideoPrototype extends React.Component {
               <iframe src="https://player.vimeo.com/video/304677132" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               <p><a href="https://vimeo.com/304677132">Final Prototype | HCDE 598</a> from <a href="https://vimeo.com/user90299481">Shreyans Gandhi</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
             </div>
-            <CustomAlertBox alertText="This page is a work-in-progress." />
           </ProjectSection>
         </PageWithProgress>
 

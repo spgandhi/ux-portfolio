@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import ReadingProgress from 'react-reading-progress'
-
 export default class HTML extends React.Component {
   render() {
     return (

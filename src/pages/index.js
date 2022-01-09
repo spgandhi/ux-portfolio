@@ -1,18 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import smartTechMainImg from '../images/smart-tech/main_img.jpg';
-import tripBuddyMainImg from '../images/trip-buddy/trip_buddy_main.jpg';
 import mainSS from '../images/trip-buddy/main-ss.png';
-import ticTacToeMainImg from '../images/tic-tac-toe/tic-tac-toe-main.png';
-import videoProtoMain from '../images/video-proto/video-proto-main.jpg';
 import LayoutFull from '../components/LayoutFull'
-import Typed from 'react-typed';
 import SEO from '../components/seo'
 import { Card, CardImg, CardBody, Button } from 'reactstrap';
 import ReactGA from 'react-ga';
 import analytics from '../helper';
-import CustomAlertBox from '../components/alertBox';
 import ProjectSection from '../components/ProjectSection';
+import '../components/layout.css';
 ReactGA.initialize('UA-131887085-1');
 
 const taglineStyle = {
